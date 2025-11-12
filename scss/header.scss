@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'mixins/import';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  gap: 15px;
+
+  @media (min-width: $breakpoint-xl) {
+    padding-right: 70px;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    gap: 84px;
+
+    @media (max-width: $breakpoint-lg) {
+      gap: 40px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: clamp(18px, 2vw, 24px);
+
+      @include transition(color);
+
+      &:hover {
+        color:var(--accent);
+      }
+    }
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    padding: 10px;
+    cursor: pointer;
+
+    svg {
+      min-width: 50px;
+      @include transition((fill, transform));
+      fill: white;
+    }
+
+    &:hover {
+      svg {
+        fill:var(--accent);
+        transform: rotate(360deg);
+        transition-duration: 2s;
+      }
+    }
+  }
+
+  &__img {
+    width: 24%;
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+}

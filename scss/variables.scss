@@ -1,0 +1,20 @@
+:root {
+  --bg: url('../assets/svg/background-main.svg');
+  --bg-add: url('../assets/svg/background-stars.svg');
+  --accent: #FB6542;
+  --muted: #bdbdbd;
+  --white: #fff;
+  --black: #131212;
+  --max-width: 1780px;
+}
+
+// Fonts
+$--root-font-default: "Geometria", Helvetica, Arial, sans-serif;
+$--root-font-size: 24;
+
+// Media
+$breakpoint-xl: 1980px;
+$breakpoint-lg: 1200px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-ssm: 400px;
