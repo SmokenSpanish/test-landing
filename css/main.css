@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 .header__icon svg {
-  min-width: 50px;
+  width: clamp(20px, 5vw, 50px);
   transition: fill, transform;
   transition-duration: 0.3s;
   transition-delay: 0s;
@@ -141,8 +141,18 @@ p, a, h1 {
   }
 }
 
+:root {
+  --bg: url('../assets/svg/background-main.svg');
+  --bg-add: url('../assets/svg/background-stars.svg');
+  --accent: #FB6542;
+  --muted: #bdbdbd;
+  --white: #fff;
+  --black: #131212;
+  --max-width: 1780px;
+}
+
 .page {
-  padding: 73px 0 0;
+  padding-top: clamp(15px, 5vw, 73px);
 }
 
 .footer__socials {

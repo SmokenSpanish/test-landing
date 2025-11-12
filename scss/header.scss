@@ -52,7 +52,7 @@
     cursor: pointer;
 
     svg {
-      min-width: 50px;
+      width: clamp(20px, 5vw, 50px);
       @include transition((fill, transform));
       fill: white;
     }

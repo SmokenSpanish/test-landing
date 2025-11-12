@@ -1,3 +1,5 @@
+@import 'variables';
+
 .page {
-  padding: 73px 0 0;
+  padding-top: clamp(15px, 5vw, 73px);
 }
